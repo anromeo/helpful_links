@@ -10,7 +10,6 @@
  *
  *= require_self
  *= require_jquery
- *= require_fancybox
+ *= require fancybox
  *= require_tree .
- *= require twitter/bootstrap
  */

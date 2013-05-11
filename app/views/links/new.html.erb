@@ -2,15 +2,19 @@
 <%= form_for(@link) do |l| %>
 	<table>
 		<tr>
-			<td><%= l.label :url, "What link do you want to add?", {:class=>"formText"} %></td>
+			<td><%= l.label :name, "Name", {:class=>"formText"} %></td>
+			<td><%= l.text_field :name, {:id=>"name", :class=>"formBox"} %></td>
+		</tr>
+		<tr>
+			<td><%= l.label :url, "Link", {:class=>"formText"} %></td>
 			<td><%= l.text_field :url, {:id=>"url", :class=>"formBox"} %></td>
 		</tr>
 		<tr>
-			<td><%= l.label :rating, "What rating would you like to give this?", {:class=>"formText"} %></td>
-			<td><%= l.text_field :rating, {:id=>"rating", :class=>"formBox", :size=>1} %></td>
+			<td><%= l.label :description, "Description", {:class=>"formText"} %></td>
+			<td><%= l.text_field :description, {:id=>"description", :class=>"formBox"} %></td>
 		</tr>
-		<tr colspan=2>
-			<td><%= l.submit 'Add Link' %></td>
+		<tr>
+			<td colspan="2" align="right"><%= l.submit 'Add Link' %></td>
 		</tr>
 	</table>
 <% end %>

@@ -3,12 +3,17 @@
 <table cellpadding="10">
 		<tr>
 			<td><h2>Link</h2></td>
-			<td><h2>Rating</h2></td>
+			<td><h2>Description</h2></td>
 		</tr>
 	<% @links.each do |l| %>
 		<tr>
-			<td><%= link_to l.url, l.url %></td>
-			<td><%= l.rating %></td>
+			<% if /http:/.match(l.url)
+				u = l.url
+				else
+				u = 'http://' + l.url
+				end %>
+			<td><%= link_to l.name, u %></td>
+			<td><%= l.description %></td>
 		</tr>		
 	<% end %>
 </table>

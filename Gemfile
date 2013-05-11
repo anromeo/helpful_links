@@ -36,6 +36,9 @@ end
 # gem 'debugger'
 gem 'jquery-rails'
 gem 'fancybox-rails'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
 
 group :test, :development do
 	gem 'rspec-rails', '~> 2.11'
