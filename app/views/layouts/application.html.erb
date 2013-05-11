@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header>
+	<img src="https://www.codefellows.org/assets/CodeFellows-small-ff2a0932c27c0735f3344c0de4780693.png" id="headImg" />
+	<div>
+		<h1>Code Fellows Useful Links</h1>
+	</div>
+</header>
+<div class="wrapper">
+<% flash.each do |key, value| %>
+	<div class='flash' id='<%= key %>'>
+		<%= value %>
+	</div>
+<% end %>
 <%= yield %>
-
+</div>
 </body>
 </html>

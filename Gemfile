@@ -20,8 +20,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -36,3 +34,14 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+gem 'jquery-rails'
+gem 'fancybox-rails'
+
+group :test, :development do
+	gem 'rspec-rails', '~> 2.11'
+end
+
+group :test do
+	gem 'capybara', '1.1.2'
+	gem 'factory_girl', '2.6.4'
+end

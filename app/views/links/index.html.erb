@@ -1,0 +1,15 @@
+<%= link_to "Add a Helpful Link for Learning Rails", new_link_path, {:class => "fancybox"} %>
+<div class="linksAll">
+<table cellpadding="10">
+		<tr>
+			<td><h2>Link</h2></td>
+			<td><h2>Rating</h2></td>
+		</tr>
+	<% @links.each do |l| %>
+		<tr>
+			<td><%= link_to l.url, l.url %></td>
+			<td><%= l.rating %></td>
+		</tr>		
+	<% end %>
+</table>
+</div>

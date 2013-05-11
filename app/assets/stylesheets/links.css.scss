@@ -1,0 +1,50 @@
+// Place all the styles related to the links controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+.formText{
+	font-family: Impact, Charcoal, sans-serif;
+}
+.formBox{
+	border-radius: 5px;
+	background-color: #CCC;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+header{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	z-index: 1001;
+	width: 100%;
+	-webkit-box-shadow: rgba(0,0,0,0.4) 2px 2px 2px;
+	-moz-box-shadow: rgba(0,0,0,0.4) 2px 2px 2px;
+	box-shadow: rgba(0,0,0,0.4) 2px 2px 2px;
+	background: #f7f7f7;
+	border-bottom: solid 1px #fff;
+	background: url(https://www.codefellows.org/assets/patterns/debut_light.png);
+	text-align: center;
+}
+.wrapper{
+	padding-top: 100px;
+	width: auto;
+	text-align: center;
+}
+.linksAll{
+	text-align: left;
+	max-width: 300px;
+	margin: auto;
+}
+#fancyReturn{
+	text-align: left;
+}
+#headImg{
+	float: left;
+}
+h1{
+	text-transform: uppercase;
+	font-family: "Fjalla One",sans-serif;
+}
