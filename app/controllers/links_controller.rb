@@ -1,6 +1,6 @@
 class LinksController < ApplicationController
   def index
-    @links = Link.all
+    @links = Link.all.reverse
     respond_to do |format|
       format.html
       format.json {render json: @links}
